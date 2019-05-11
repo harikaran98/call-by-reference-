@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <conio.h>
+
+//call by reference
+void myfunction(int *i)
+{
+     *i=20 ;
+}
+
+void main ()
+{ 
+    int i=10 ; 
+myfunction(&i);
+printf("the value of i is %d",i);
+}
